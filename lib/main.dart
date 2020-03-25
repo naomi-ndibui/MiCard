@@ -14,12 +14,24 @@ class MyApp extends StatelessWidget {
          body: SafeArea(
            child: Column(
              children: <Widget>[
-             Container(
+               Container(
               height: 100.0,
               width: 100.0,
               color: Colors.white,
               child: Text('Container 1'),
-             )
+             ),
+               Container(
+                 width: 100.0,
+                 height:100.0,
+                 color: Colors.blue,
+                 child: Text('Container 2'),
+               ),
+               Container(
+                 width: 100.0,
+                 height:100.0,
+                 color: Colors.red,
+                 child: Text('Container 3'),
+               ),
              ],
            ),
          ),
