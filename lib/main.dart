@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(
@@ -13,22 +14,22 @@ class MyApp extends StatelessWidget {
          backgroundColor: Colors.teal,
          body: SafeArea(
            child: Column(
-             mainAxisSize: MainAxisSize.min,
+             crossAxisAlignment: CrossAxisAlignment.end,
              children: <Widget>[
                Container(
-              height: 100.0,
-              width: 100.0,
-              color: Colors.white,
-              child: Text('Container 1'),
+                 width: double.infinity,
+                 height: 100.0,
+                 color: Colors.white,
+                 child: Text('Container 1'),
              ),
                Container(
-                 width: 100.0,
+                 width: double.infinity,
                  height:100.0,
                  color: Colors.blue,
                  child: Text('Container 2'),
                ),
                Container(
-                 width: 100.0,
+                 width: double.infinity,
                  height:100.0,
                  color: Colors.red,
                  child: Text('Container 3'),
